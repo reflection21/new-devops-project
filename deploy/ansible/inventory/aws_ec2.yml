@@ -1,0 +1,12 @@
+plugin: amazon.aws.aws_ec2
+regions:
+  - eu-north-1
+hostnames:
+  - instance-id
+
+# filters:
+#   tag:Name: spline-wordpress-server
+
+keyed_groups:
+  - key: tags.Name
+    prefix: value

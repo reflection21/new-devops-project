@@ -139,3 +139,7 @@ Thumbs.db
 infra/terragrunt/backend.tf
 
 infra/terragrunt/version.tf
+
+
+terragrunt/dev/provider.tf
+terragrunt/dev/backend.tf

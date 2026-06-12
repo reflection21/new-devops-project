@@ -1,0 +1,9 @@
+- name: deploy site.com
+  hosts: value_dev_vps
+  vars:
+    ansible_connection: aws_ssm
+    ansible_aws_ssm_bucket_name: ansible-bucket-reflection2211
+    ansible_aws_ssm_region: eu-north-1
+    #ansible_aws_ssm_timeout: 300
+  roles:
+    - nginx

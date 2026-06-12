@@ -1,7 +1,7 @@
 # vps
 resource "aws_instance" "vps" {
-  ami                         = "ami-05d62b9bc5a6ca605" # ubu 24.04, north-1
-  instance_type               = "t3.micro"
+  ami                         = "ami-067bcf851477ebb78" # ubu 24.04, north-1
+  instance_type               = "c7i-flex.large"
   subnet_id                   = var.vps_subnet[0]
   vpc_security_group_ids      = [var.vps_sg]
   iam_instance_profile        = aws_iam_instance_profile.vps_profile.id
